@@ -1,21 +1,21 @@
 class Ralphy < Formula
   desc "Open-source UGC video factory CLI — one prompt to finished mp4"
   homepage "https://github.com/alecs5am/ralphy"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/alecs5am/ralphy/releases/download/v0.0.1/ralphy-darwin-arm64"
-      sha256 "d23ecbe1d2f424fde880e3d44298b71b9a377af2101edcb17fb66f6a37827e9b"
+      url "https://github.com/alecs5am/ralphy/releases/download/v0.0.2/ralphy-darwin-arm64"
+      sha256 "9d38a8fb4b5339332051fb99bec5b256b4bc71240b12664b8a12d7adc7376131"
 
       def install
         bin.install "ralphy-darwin-arm64" => "ralphy"
       end
     end
     on_intel do
-      url "https://github.com/alecs5am/ralphy/releases/download/v0.0.1/ralphy-darwin-x64"
-      sha256 "8b61e5e41ff522d54b64b99c6d067c19ec8579e6cdb5111e516c01127faa9fa1"
+      url "https://github.com/alecs5am/ralphy/releases/download/v0.0.2/ralphy-darwin-x64"
+      sha256 "c468d31565678eef09c3d744efccff350e1ada6e5ef8464c4fc2837d753447d6"
 
       def install
         bin.install "ralphy-darwin-x64" => "ralphy"
@@ -25,16 +25,16 @@ class Ralphy < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/alecs5am/ralphy/releases/download/v0.0.1/ralphy-linux-arm64"
-      sha256 "e31200a9bfabfab6be3c2fbaf07ab62630e5d49eab3b9922e1e88771d710c22b"
+      url "https://github.com/alecs5am/ralphy/releases/download/v0.0.2/ralphy-linux-arm64"
+      sha256 "9cfbcbf703721c10ae36dcafec0f9155cec1d6c5188cec0c9b06415dfa6813c3"
 
       def install
         bin.install "ralphy-linux-arm64" => "ralphy"
       end
     end
     on_intel do
-      url "https://github.com/alecs5am/ralphy/releases/download/v0.0.1/ralphy-linux-x64"
-      sha256 "da8109ae4800dd37e9786e6475a07eb1c4e2267d1750547b319f846d5b652e2a"
+      url "https://github.com/alecs5am/ralphy/releases/download/v0.0.2/ralphy-linux-x64"
+      sha256 "e8639b50300903ad2e9422d96d0da3dc32012129da2067021915163077237f51"
 
       def install
         bin.install "ralphy-linux-x64" => "ralphy"
@@ -43,6 +43,6 @@ class Ralphy < Formula
   end
 
   test do
-    assert_match "0.0.1", shell_output("#{bin}/ralphy --version")
+    assert_match "0.0.2", shell_output("#{bin}/ralphy --version")
   end
 end
